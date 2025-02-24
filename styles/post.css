@@ -1,0 +1,19 @@
+/* public/styles/post.css */
+article header {
+  margin-bottom: 2rem;
+}
+
+time {
+  color: var(--color-date);
+  font-size: 0.9em;
+}
+
+.tags {
+  margin-top: 1rem;
+}
+
+.tag {
+  color: var(--color-link);
+  text-decoration: none;
+  margin-right: 1rem;
+}
