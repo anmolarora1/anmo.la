@@ -1,39 +1,78 @@
 <!-- templates/home.html -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Site</title>
-    <link rel="stylesheet" href="/styles/main.css">
-    <link rel="stylesheet" href="/styles/home.css">
+    <title>Anmol Arora</title>
+    <link rel="stylesheet" href="styles/main.css">
 </head>
-<body>
+<body class="bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100">
     <header>
-        <h1>{{title}}</h1>
-        <p>A simple personal website</p>
+        <h1 class="text-3xl font-bold">Anmol Arora</h1>
+        <p class="mt-2"></p>
     </header>
 
-    <main>
-        <ul class="post-list">
-            
-      <li>
-        <time datetime="2025-02-24T09:45:56.069Z">February 24, 2025</time>
-        <a href="/posts/untitled">Untitled</a>
-      </li>
-    
+    <nav>
+        <a href="#about">About</a>
+        <a href="#now">Now</a>
+        <a href="#writing">Writing</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
-      <li>
-        <time datetime="2025-02-24T09:45:56.069Z">February 24, 2025</time>
-        <a href="/posts/untitled">Untitled</a>
-      </li>
-    
-        </ul>
+    <main>
+        <section id="about">
+            <h2>About</h2>
+            <p>I find joy in doing sports - running, lifting, cycling - on a regular basis, and occasionally adrenaline-rushing ones like skydiving. I like using podcasts as a medium of learning - distilling insights from the journeys and wisdom of world-class performers.
+</p>
+<p>The last 10 years, or the first decade of my adulthood, was focused primarily on building a career as a software engineer, earning some money, and most importantly, learning - by making mistakes. :D
+</p>
+<p>In the next decade, I wish to change course a bit. We'll see where things go, but they will certainly be different. :)
+</p>
+        </section>
+
+        <section id="now">
+            <h2>Now</h2>
+            <p>At present, I am:
+</p>
+<ul>
+<p><li><em style="text-decoration: underline;">living</em>: in Berlin, working as a software engineer</li>
+<li><em style="text-decoration: underline;">training</em>: for Prague half marathon and Berlin marathon 2025</li>
+<li><em style="text-decoration: underline;">learning</em>: Ich lerne Deutsch</li>
+<li><em style="text-decoration: underline;">reading</em>: <a href="https://www.goodreads.com/book/show/25541028-elon-musk">Elon Musk by Walter Isaacson</a></li>
+<li><em style="text-decoration: underline;">experimenting</em>: with using Linear for personal project management</li>
+</p>
+</ul>
+
+            <p class="date">Updated: March 14, 2025</p>
+        </section>
+
+        <section id="writing">
+            <h2>Writing</h2>
+            <ul class="post-list">
+                
+        <li>
+          <time datetime="2025-03-13">March 13, 2025</time>
+          <a href="posts/radical-ownership-taking-responsibility-for-a-better-you.html">Radical Ownership: Taking Responsibility for a Better You</a>
+        </li>
+      
+
+        <li>
+          <time datetime="2025-03-03">March 3, 2025</time>
+          <a href="posts/fear-setting-and-8020.html">Fear Setting and 80/20</a>
+        </li>
+      
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>My contact section is currently brewing up and will be available soon</p>
+        </section>
     </main>
 
     <footer>
-        <p>© 2025 Your Name</p>
+        <p>Last updated: March 2025</p>
     </footer>
 </body>
 </html>
-
