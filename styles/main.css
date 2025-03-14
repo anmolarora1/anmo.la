@@ -26,13 +26,6 @@ body {
   color: #e0e0e0; /* Light text color */
 }
 
-/* Ensure underlined text is visible */
-[style*="text-decoration: underline"] {
-  text-decoration-thickness: 2px !important;
-  text-underline-offset: 3px !important;
-  text-decoration-color: currentColor !important;
-}
-
 h1 {
   color: #228B22; /* Forest Green for H1 */
   font-size: 2.5em;
