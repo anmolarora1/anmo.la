@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- Background -->
+  <rect width="32" height="32" rx="4" fill="#228B22"/>
+  
+  <!-- Letter A -->
+  <path d="M10 24L14 8H18L22 24H18L17 20H13L12 24H10ZM13.8 16H16.2L15 12L13.8 16Z" fill="white"/>
+  
+  <!-- Dot -->
+  <circle cx="25" cy="24" r="2" fill="white"/>
+</svg> 
