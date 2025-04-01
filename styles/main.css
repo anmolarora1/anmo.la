@@ -49,6 +49,13 @@ h3 {
   margin-bottom: 0.5em;
 }
 
+h4 {
+  color: #4CAF50; /* Green for H4 */
+  font-size: 1.4em;
+  margin-top: 1.2em;
+  margin-bottom: 0.5em;
+  font-weight: 500;
+}
 
 h3 strong, h4 strong, h5 strong {
   font-weight: 500;
@@ -65,6 +72,10 @@ h3 strong, h4 strong, h5 strong {
 
 .dark h3 {
   color: #3CB371; /* Medium Sea Green for H3 in dark mode */
+}
+
+.dark h4 {
+  color: #4CAF50; /* Green for H4 in dark mode */
 }
 
 /* Improve paragraph readability in dark mode */
