@@ -313,3 +313,160 @@ html {
     display: none;
   }
 }
+
+/* Contact Form Styles */
+.contact-form {
+  margin: 2em 0;
+}
+
+.contact-intro {
+  margin-bottom: 1.5em;
+  font-size: 0.95em;
+  line-height: 1.5;
+  color: #388E3C;
+  padding: 0.5em;
+  border-radius: 4px;
+  background-color: rgba(76, 175, 80, 0.1);
+}
+
+.dark .contact-intro {
+  color: #66BB6A;
+  background-color: rgba(76, 175, 80, 0.15);
+}
+
+.form-group {
+  margin-bottom: 1.5em;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5em;
+  font-weight: 500;
+  font-size: 0.95em;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.8em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+  background-color: #fff;
+  color: #333;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.dark .form-group input,
+.dark .form-group textarea {
+  background-color: #1e293b;
+  border-color: #334155;
+  color: #f1f5f9;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #4CAF50;
+  box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.2);
+}
+
+.character-count {
+  font-size: 0.8em;
+  margin-top: 0.5em;
+  color: #666;
+}
+
+.dark .character-count {
+  color: #94a3b8;
+}
+
+.character-count .valid {
+  color: #4CAF50;
+}
+
+.character-count .invalid {
+  color: #f44336;
+}
+
+.submit-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 0.6em 1.2em;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.95em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #45a049;
+}
+
+/* Form submission feedback */
+.submit-feedback {
+  margin: 1em 0;
+  padding: 0.5em;
+  background-color: rgba(76, 175, 80, 0.1);
+  border-radius: 4px;
+  text-align: center;
+  font-size: 0.9em;
+  color: #4CAF50;
+}
+
+.dark .submit-feedback {
+  background-color: rgba(76, 175, 80, 0.2);
+  color: #66BB6A;
+}
+
+/* Success Page Styles */
+.success-card {
+  text-align: center;
+  padding: 2em;
+}
+
+.success-message {
+  margin: 2em 0;
+}
+
+.button-container {
+  margin-top: 2em;
+}
+
+.button {
+  display: inline-block;
+  background-color: #4CAF50;
+  color: white;
+  padding: 0.8em 1.5em;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #45a049;
+}
+
+/* Contact Button on Home Page */
+.contact-button-container {
+  margin-top: 1.5em;
+  text-align: center;
+}
+
+.contact-button {
+  display: inline-block;
+  background-color: #4CAF50;
+  color: white;
+  padding: 0.8em 1.5em;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color: #45a049;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

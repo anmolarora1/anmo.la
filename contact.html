@@ -1,0 +1,73 @@
+<!-- templates/contact.html -->
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Anmol Arora</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+</head>
+<body class="bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100">
+    <div class="home-link">
+        <a href="/" title="Home">←</a>
+    </div>
+    
+    <div class="card">
+        <h1>Contact Me</h1>
+        
+        <div class="contact-form">
+            <form action="https://formsubmit.co/el/xixuxu" method="POST">
+                <!-- FormSubmit Configuration -->
+                <input type="hidden" name="_subject" value="New message from your website!">
+                <input type="hidden" name="_next" value="https://anmo.la/contact-success.html">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_captcha" value="true">
+                
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message (min 50 characters)</label>
+                    <textarea name="message" id="message" rows="6" minlength="50" required></textarea>
+                    <div class="character-count">
+                        <span id="char-count">0</span>/50 characters minimum
+                    </div>
+                </div>
+                
+                <button type="submit" class="submit-button">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p class="back-link"><a href="/">← home</a></p>
+    </footer>
+
+    <script>
+        // Character counter for message
+        const messageField = document.getElementById('message');
+        const charCount = document.getElementById('char-count');
+        
+        messageField.addEventListener('input', function() {
+            const count = this.value.length;
+            charCount.textContent = count;
+            
+            if (count >= 50) {
+                charCount.classList.add('valid');
+                charCount.classList.remove('invalid');
+            } else {
+                charCount.classList.add('invalid');
+                charCount.classList.remove('valid');
+            }
+        });
+    </script>
+</body>
+</html> 
