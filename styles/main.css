@@ -119,25 +119,52 @@ a:hover {
 }
 
 .post-list li {
-  margin: 1.5em 0;
+  padding: 0.5em 0;
+  transition: transform 0.2s ease;
+  margin-bottom: 0.25em;
+}
+
+.post-list li:hover {
+  transform: translateX(5px);
+}
+
+.post-list li a {
+  display: block;
+  font-size: 1.1em;
+  padding: 0.3em 0;
+  /* border-bottom: none; */
+  border-bottom: 2px solid rgba(76, 175, 80, 0.2);
+  width: max-content;
+  padding-right: 1rem;
+  line-height: 1.2;
+  font-weight: 300;
+}
+.post-list li a:hover {
+  border-bottom: 2px solid rgba(76, 175, 80, 0.5);
 }
 
 .post-list li.view-all {
   margin-top: 2em;
   text-align: center;
   font-size: 0.9em;
+  border-bottom: none;
 }
 
 .post-list li.view-all a {
-  border-bottom: 1px solid #4CAF50;
   color: #4CAF50;
   padding: 0.3em 0.5em;
   transition: all 0.2s ease;
+  display: inline;
 }
 
 .post-list li.view-all a:hover {
   border-bottom: 1px solid #66BB6A;
   color: #66BB6A;
+}
+
+/* All posts page specific styles */
+.all-posts li {
+  padding: 0.7em 0;
 }
 
 time {
